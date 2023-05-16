@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HatPulse</title>
+</head>
+<body>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+        }
+       
+        .landingandnavbar{
+            display: grid;
+            grid-template-rows: 20px 1fr;
+            width: 100%;
+            height: auto;
+            
+        }
+        .landingPlace{ 
+            background-image: url('./child-girl-wearing-a-sunlight-hat-wallpaper-preview.jpg');
+            background-repeat: no-repeat;
+            background-size: 100%;
+            width: 100%;
+            height: 600px;
+            text-align: center;
+            
+          
+
+        }
+        .landingPlaceinfo{
+            transform: translateY(120px);
+            font-size: 40px;
+        }
+        .navbar {
+           text-decoration: none;
+           text-decoration-color: rgb(255, 255, 255);
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            justify-items: center;
+            width: 100%;
+            position: relative;
+          background-color: rgb(0, 0, 0);
+          color: rgb(255, 255, 255);
+          position: sticky; 
+          top: 0px;
+          z-index: 1;
+          
+        }
+        .navbar a{
+           text-decoration: none;
+           
+        }
+      .products{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 70px;
+        margin-left: 30px;
+        
+      }
+      .row1, .row2{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+      }
+      .row2 img{
+        width: 260px;
+        height: 150px;
+      }
+      .row1 img{
+        width: 260px;
+        height: 150px;
+      }
+      .p1{
+        position: relative;
+        transition: transform .5s;
+        z-index: 2;
+      }
+      .p1:hover{
+        
+        
+       transform: scale(1.1);
+       
+       
+      }
+      .p1:hover button{
+        display: block;
+        background-color: black;
+        
+      }
+      .p1 button{
+        display: none;
+        transform: translate(50px, 5px);
+        color: white;
+        border: 3px solid rgb(96, 58, 58);
+        padding: 5px;
+        cursor: pointer;
+        position: relative;
+      }
+      .p1 img{
+        border: 6px solid rgb(0, 0, 0);
+      }
+      .p2{
+        border: 6px solid rgb(0, 0, 0);
+        position: relative;
+        transition: transform .5s;
+      }
+      .p2:hover{
+        
+        
+        transform: scale(1.1);
+        
+       }
+       .p2:hover button{
+         display: block;
+         background-color: black;
+       }
+
+
+    </style>
+    <div class="landingandnavbar">
+        <div class="navbar">
+            <div class="logo">LOGO</div>
+            <div class="home">HOME</div>
+            <div class="aboutUs"><a href="./aboutus.html" style="color: white">ABOUT US</a></div>
+            <div class="contactUs"> <a href=".contactus"style="color: white">Contact US</a></div>
+      
+      </div>
+     
+    <div class="landingPlace">
+        <div class="landingPlaceinfo">
+          HATS WHICH YOU LOVE
+        </div>
+    </div>
+    
+    </div><div class="collection" style="text-align: center; font-size: 30px;">MY COLLECTION</div>
+   
+    <div class="products">
+        <div class="row1">
+        <div class="p1"><img src="./images/images.jpg" alt="">
+            <button>ORDER NOW</button>
+        </div>
+        <div class="p1"><img src="./images/images.jpg" alt=""></div>
+        <div class="p1"><img src="./images/images.jpg" alt=""></div>
+        <div class="p1"><img src="./images/images.jpg" alt=""></div>
+        <div class="p1"><img src="./images/images.jpg" alt=""></div>
+       
+        </div>
+        <div class="row2">
+            <div class="p2"><img src="./images/child-girl-wearing-a-hat-outdoor-wallpaper-preview.jpg" alt=""></div>
+            <div class="p2"><img src="./images/child-girl-wearing-a-hat-outdoor-wallpaper-preview.jpg" alt=""></div>
+            <div class="p2"><img src="./images/child-girl-wearing-a-hat-outdoor-wallpaper-preview.jpg" alt=""></div>
+            <div class="p2"><img src="./images/child-girl-wearing-a-hat-outdoor-wallpaper-preview.jpg" alt=""></div>
+            <div class="p2"><img src="./images/child-girl-wearing-a-hat-outdoor-wallpaper-preview.jpg" alt=""></div>
+      
+        </div>
+
+    </div>
+    <div class="more" style="text-align: center">
+        <H2>SOME MORE DESIGNS</H2>
+    </div>
+    <img src="./child-girl-wearing-a-sunlight-hat-wallpaper-preview.jpg" alt="">
+    <div class="aboutus">ABOUT US
+        <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore laudantium cumque iste consequatur. Magnam sunt non quidem eaque sit error. Quas, quaerat? Explicabo voluptate doloremque, iure sint eligendi qui aliquid?
+    </div>
+    <div class="contactus">
+        <h2>contact us</h2>
+    </div>
+
+</body>
+</html>

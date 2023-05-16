@@ -1,0 +1,139 @@
+<html><head></head>
+<body>
+    <style>
+
+
+
+.container{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    justify-content: center;
+}
+#mainDiv {
+margin-top:25%;
+border:1px black solid;
+}
+#minus , #plus{
+height:25px;
+width:25px;
+border:1px black solid;
+border-radius:50%;
+margin-top: 40px;
+}
+#minus:hover{
+background-color:red;    
+border:none;
+}
+#plus:hover{
+background-color:green;
+border:none;
+}
+#numberPlace {
+margin-left:5px;
+margin-right:5px;
+}
+#submit {
+border:none;
+height:25px;
+width: 200px;
+margin-top: 50px;
+}
+#bottom{
+margin-top:90%;
+}
+
+    </style>
+    </style>
+     <div class="container">
+        <div class="fooditem">
+            <img src="./images for project/tandoori.jpg" alt="" style="width:600px; border-radius:10px">
+            
+
+        </div>
+        <div class="iteminfo">
+            <h2> Dish Name: KOfta</h2>
+            <br>
+            <h2>Price: 
+             <span id="totalValue">0</span>
+         </h2>
+         <h2>Quantity:<span id="quantity"></span></h2>
+         
+         
+            <button id="minus">-</button>
+            <span id="numberPlace">0</span>
+            <button id="plus">+</button>
+            <br>
+            
+        <button id="submit">Place My Order</button>
+        </div>
+        
+
+    </div>
+    <script>
+        window.onload=function(){
+var minusBtn = document.getElementById("minus"),
+plusBtn = document.getElementById("plus"),
+numberPlace = document.getElementById("numberPlace"),
+submitBtn = document.getElementById("submit"),
+totl=document.getElementById("total"),
+number = 0, /// number value
+min = 0, /// min number
+max = 30; /// max number
+total=110;
+
+minusBtn.onclick = function(){
+if (number>min){
+number = number-1; /// Minus 1 of the number
+numberPlace.innerText = number ; /// Display the value in place of the number
+
+}
+if(number == min) {        
+numberPlace.style.color= "red";
+setTimeout(function(){numberPlace.style.color= "black"},500)
+}
+else {
+numberPlace.style.color="black";            
+}
+total=110;
+total=total*number;
+totalValue.innerText=total;
+    quantity.innerText=number;
+}
+plusBtn.onclick = function(){
+
+if(number<max){
+number = number+1;
+numberPlace.innerText = number ; /// Display the value in place of the number
+}     
+if(number == max){
+   numberPlace.style.color= "red";
+   setTimeout(function(){numberPlace.style.color= "black"},500)
+}
+
+else {
+   numberPlace.style.color= "black";
+   
+}
+total=110;
+total=total*number;
+totalValue.innerText=total;
+quantity.innerText=number;
+
+
+
+
+
+
+
+}
+// totl.onclick= function(){
+//    total=total*number;
+//    totalValue.innerText=total;
+// }
+submitBtn.onclick = function(){
+alert("Order palce successfully! Total Price " + total);
+}
+
+}
+    </script>
+</body></html>

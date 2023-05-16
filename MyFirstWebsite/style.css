@@ -1,0 +1,30 @@
+h1{
+    background-color: aqua;
+   text-align: center;
+}
+iframe{
+    border-width: 12ch;
+    background-color: black;
+    align-self: center;
+
+    width: 200px;
+}
+table{
+    align-items: center;
+}
+ol{
+    background-color: rgb(159, 159, 179);
+   text-align-last: center;
+}
+.welcome{
+    text-align: center;
+   color: brown;
+   
+}
+.table{
+    color: aqua;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: aquamarine;
+   
+}

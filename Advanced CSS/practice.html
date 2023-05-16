@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>My name is ? 
+    </h2>
+    <input type="text"id="enterName">
+    <p class="nme"></p>
+    <div class="buttn"><button>click here</button></div>
+    <script>
+        
+        const butt=document.querySelector('.buttn');
+        const name2=document.querySelector('.nme');
+        
+        const showName= () =>{
+            name2.innerHTML="loading....";
+            
+            setTimeout(() => {
+                let nameEntered= document.getElementById('enterName').value;
+           name2.innerHTML="entered name is "+  nameEntered;
+           
+      
+            },1000);
+        }
+            butt.addEventListener('click', showName);
+    </script>
+</body>
+</html>

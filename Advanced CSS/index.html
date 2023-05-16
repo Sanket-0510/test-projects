@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Website</title>
+</head>
+<body>
+    <style>
+         *{
+            width: 100%;
+            height: 100%;
+            margin: 0%;
+            padding: 0%;
+            
+                }   
+                body{
+                    z-index: 0;
+                }
+        img{
+
+            width:62px;
+         padding: 10px;
+         height: auto;
+
+         border-radius: 50%;
+          
+        }
+        .gol-logo{
+            border-width: 2px;
+            border-color: rgb(0, 0, 0);
+            border-radius: 50%;
+           border-style: solid;
+            background-color: rgb(242, 255, 127);
+            width: 80px;
+            height: auto;
+            cursor:pointer;            
+         
+        }
+        
+        ul{
+         display: flex;
+            justify-content: center;
+            text-align: center;
+          list-style: none;
+          margin-top: 5px;
+          width: auto;
+          height: auto;
+          align-items: center;
+          text-transform: uppercase;
+          cursor: pointer;
+        }
+       #Menu-select{
+        text-transform: uppercase;
+       }
+       .dropdown{
+        position: relative;
+        display: inline-block;
+        
+       }
+       .dropdown-content {
+        position: absolute;
+        display: none;
+        
+        list-style: none;
+        z-index: 100;
+       }
+       .dropdown-content li{
+         background-color: rgba(226, 255, 82, 0.782);
+         z-index: 1;
+         
+       }
+       .dropdown:hover .dropdown-content {
+        display: block;
+       }
+       
+       .menu-button{
+        background-color: rgba(103, 92, 255, 0.54);
+       
+       width: 100px;
+       height: auto;
+       border: none;
+       font-size: 20px;
+       }
+       .navbar{
+        background-color: rgba(158, 72, 237, 0.622);
+        width: auto;
+        height:auto;
+       }
+    </style>
+    <div class="navbar">
+      <ul>
+        <li><div class="gol-logo"><img src="./images for project/Screenshot 2022-07-07 220347.png" alt=""></div>
+        </li>
+        <li class="home">HOME</li>
+        <li class="dropdown"><button class="menu-button">MENU</button>
+            <ol class="dropdown-content">
+                <li>wadapav</li>
+                <li>samosa</li>
+                <li>uthhappa</li>
+                <li>dosa</li>
+                <li>faluda</li>
+            </ol>
+        </li>
+        <li>BLOG</li>
+        <li>ABOUT US</li>
+        <LI>SIGN UP</LI>
+        <LI>LOGIN</LI>
+      </ul>
+    </div>
+</body>
+</html>
